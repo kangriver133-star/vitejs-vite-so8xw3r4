@@ -65,8 +65,16 @@
 
   </div>
 
-</body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js')
+        .then(() => console.log("서비스 워커 등록 완료!"))
+        .catch((err) => console.log("서비스 워커 실패:", err));
+    }
+  </script>
+
+
 <script type="module" src="./src/main.js"></script>
 <link rel="stylesheet" href="./src/style.css" />
-
+</body>
 </html>
