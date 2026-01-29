@@ -1,13 +1,13 @@
 {
   "name": "적립식 투자 도우미",
   "short_name": "투자도우미",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2c3e50",
   "icons": [
     {
-      "src": "/icon.png",
+      "src": "icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
