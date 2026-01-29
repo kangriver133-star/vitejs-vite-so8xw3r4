@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>투자 도우미</title>
+</head>
+<body>
+
+  <h1>📊 적립식 투자 도우미</h1>
+
+  <!-- ===================== -->
+  <!-- 홈 화면 -->
+  <!-- ===================== -->
+  <div id="home">
+
+    <h2>월 투자 금액</h2>
+    <input
+      id="monthlyMoney"
+      type="number"
+      placeholder="예: 1000000 (원)"
+    />
+
+    <hr />
+
+    <h2>종목 추가</h2>
+
+    <input
+      id="stockName"
+      placeholder="종목명 (예: S&P500)"
+    />
+
+    <input
+      id="stockRatio"
+      type="number"
+      placeholder="비율 (%)"
+    />
+
+    <button id="addStockBtn">종목 추가</button>
+
+    <h3>추가된 종목</h3>
+
+    <!-- 종목 리스트 -->
+    <ul id="stockList">
+      <!-- JS로 여기에 종목이 추가됨 -->
+    </ul>
+
+    <button id="calculateBtn">결과 보기</button>
+
+  </div>
+
+  <!-- ===================== -->
+  <!-- 결과 화면 -->
+  <!-- ===================== -->
+  <div id="resultPage" style="display: none;">
+
+    <h2>📈 투자 결과</h2>
+
+    <!-- 계산 결과 출력 -->
+    <table id="resultTable">
+      <thead>
+        <tr>
+          <th>종목</th>
+          <th>비율 (%)</th>
+          <th>투자 금액 (원)</th>
+        </tr>
+      </thead>
+      <tbody id="resultBody">
+        <!-- JS로 행 추가 -->
+      </tbody>
+    </table>
+
+    <button id="backBtn">홈으로 돌아가기</button>
+
+  </div>
+
+</body>
+<script type="module" src="/src/main.js"></script>
+<link rel="stylesheet" href="/src/style.css" />
+<link rel="manifest" href="manifest.json">
+</html>
